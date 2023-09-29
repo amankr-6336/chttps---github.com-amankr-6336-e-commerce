@@ -1,0 +1,156 @@
+.maincontainerslider {
+    width: 100%;
+    height: 100%;
+    // border: 2px solid red;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    .sidedisplay{
+      width: 30%;
+      height: 100%;
+      // border: 10px solid green;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      overflow: auto;
+      
+      .innersidedisplay{
+          width: 90%;
+          height: 150px;
+          cursor: pointer;
+          overflow-y: hidden;
+
+          img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+
+          }
+      }
+
+      .innersidedisplays{
+        width: 90%;
+        height: 150px;
+        cursor: pointer;
+        overflow-y: hidden;
+        // border: 2px solid red;
+        transition-duration: 1s;
+        transform: scale(1.06);
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+  }
+    .innermaincontainerslider {
+      width: 70%;
+      height: 100%;
+  
+      display: flex;
+      overflow: hidden;
+      position: relative;
+  
+      .imagesectionslider {
+        width: 100%;
+        height: 100%;
+  
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+  
+        
+  
+        .slideronee {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  
+     
+  
+      
+  
+      .leftb {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+      }
+  
+      .rightb {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+      }
+  
+      .dots {
+        position: absolute;
+        width: 100%;
+        bottom: 50px;
+        // border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: rgb(64, 64, 64);
+        }
+        .activedot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: white;
+        }
+      }
+    }
+  }
+
+ @media screen and (max-width:600px) {
+     .maincontainerslider{
+         flex-direction: column-reverse;
+         gap: 10px;
+      .sidedisplay{
+          width: 100%;
+          height: 50%;
+          flex-direction: row;
+          flex-wrap: wrap;
+        .innersidedisplay{
+            width: 48%;
+        }
+        .innersidedisplays{
+            width: 48%;
+        }
+      }
+
+      .innermaincontainerslider{
+        width: 100%;
+        height: 50%;
+        .imagesectionslider{
+          .slideronee{
+
+          }
+
+          .dots{
+                bottom: 0px;
+          }
+        }
+      }
+     }
+ }
+  

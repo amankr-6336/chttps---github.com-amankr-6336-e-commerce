@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    
 }
 
 :root {
@@ -16,7 +18,19 @@ body {
     font-family: "Cabin", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    /* overflow-y: scroll; */
+    background-color: whitesmoke;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

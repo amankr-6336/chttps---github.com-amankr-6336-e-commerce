@@ -8,11 +8,12 @@ const cartSlice = createSlice({
     reducers: {
         addToCart: (state, action) => {
             const product = action.payload.attributes;
+            // console.log(product,"slice")
             const curItem = product ? {
                 title: product.title,
                 key: product.key,
                 price: product.price,
-                image: product.image.data.attributes.url,
+                image: product?.image?.data[0].attributes.url,
             } : action.payload;
 
             const index = state.cart.findIndex(

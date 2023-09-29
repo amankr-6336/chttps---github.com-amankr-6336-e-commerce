@@ -51,8 +51,8 @@ function Collection() {
             <div className="container">
                 <div className="header">
                     <div className="info">
-                        <h2>Explore All Print and Designs</h2>
-                        <p>
+                        <h2>Discover the latest trends and styles in fashion</h2>
+                        <p className="pp">
                             Exclusive Newness, for the Exclusive You.
                         </p>
                     </div>

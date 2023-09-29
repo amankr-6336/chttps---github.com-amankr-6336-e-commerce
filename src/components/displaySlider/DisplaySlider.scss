@@ -1,0 +1,117 @@
+.maincontainersliderp {
+  width: 90%;
+  height: 100%;
+  // border: 2px solid red;
+  
+
+  position: relative;
+  .innermaincontainerslider {
+    width: 100%;
+    height: 100%;
+    // border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+
+    .slide {
+      opacity: 0;
+      transition-duration: 1s ease;
+      overflow-y: hidden;
+      // width: 100%;
+      height: 100%;
+      transform: scale(1.2);
+      .image {
+        // margin-top: 50px;
+       width: 100%;
+        height: 100%;
+     
+        object-fit: cover;
+      }
+    }
+
+    .slide.active {
+      opacity: 1;
+      transition-duration: 1.5s ;
+      // transition: ease;
+      transform: scale(1);
+      
+      .image {
+        width: 100vw;
+        height: 100%;
+       
+        object-fit: cover;
+        
+      }
+    }
+
+    .leftb {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+     
+      z-index: 50;
+      button{
+        cursor: pointer;
+      }
+    }
+
+    .rightb {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      z-index: 50;
+      button{
+        cursor: pointer;
+      }
+    }
+
+    .dots {
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+      // border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(218, 216, 216);
+        cursor: pointer;
+      }
+      .activedot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(115, 115, 115);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:600px) {
+   .maincontainersliderp{
+      
+    .innermaincontainerslider{
+
+      .slide{
+
+      }
+      .slide.active{
+        .image{
+          width: 100%;
+        }
+      }
+    }
+
+   }
+}

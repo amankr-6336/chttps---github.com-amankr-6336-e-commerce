@@ -8,8 +8,8 @@ import { useSelector } from "react-redux";
 function Navbar() {
     const [openCart, setOpenCart] = useState(false);
     const cart = useSelector(state => state.cartReducer.cart);
-    
-    const categories=useSelector((state) => state.categoryReducer.categories);
+
+    const categories = useSelector((state) => state.categoryReducer.categories);
 
     let totalItems = 0;
     cart.forEach(item => totalItems += item.quantity);
@@ -21,7 +21,7 @@ function Navbar() {
                 <div className="container nav-container">
                     <div className="nav-left">
                         <ul className="link-group">
-                        {categories?.map((category) => (
+                            {categories?.map((category) => (
                                 <li className="hover-link" key={category.id}>
                                     <Link
                                         className="link"
@@ -29,14 +29,20 @@ function Navbar() {
                                     >
                                         {category.attributes.title}
                                     </Link>
+                                    <span></span>
                                 </li>
                             ))}
                         </ul>
                     </div>
                     <div className="nav-center">
-                        <Link to="/">
-                            <h1 className="banner">Trendy Threads</h1>
-                        </Link>
+
+                        <div className="catheading">
+                            <Link to="/">
+                                <h1 className="banner">Trendy Threads</h1>
+                            </Link>
+                            <span className="one"></span>
+                            <span className="two"></span>
+                        </div>
                     </div>
                     <div className="nav-right">
                         <div

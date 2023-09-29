@@ -4,9 +4,12 @@
     flex: 1;
     flex-grow: 0;
     align-self: stretch;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 3px;
 
     .product-container {
-        border: 1px solid rgba($color: #000000, $alpha: 0.1);
+        // border: 1px solid rgba($color: #000000, $alpha: 0.1);
 
         .product-img {
             height: 300px;
@@ -19,6 +22,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
+                overflow-y: hidden;
 
                 img {
                     width: 100%;
@@ -33,18 +37,42 @@
         .product-info {
             text-align: center;
             padding-inline:8px ;
+            overflow-y: hidden;
+            margin-bottom: 13px;
             .price {
                 color: var(--primary-text-color);
                 font-weight: 700;
                 margin-block: 16px;
             }
+            .title{
+                overflow-y: hidden;
+            }
+            .buynow{
+                width: 90%;
+                height: 40px;
+                border-radius: 5px;
+                background-color: #F0F0F0;
+                color: black;
+                border: none;
+                transition-duration: 0.5s;
+            }
+            .buynow:hover{
+                transition-duration: 0.5s;
+                color: white;
+                background-color: #8800c7;
+                cursor: pointer;
+            }
         }
     }
 
-    &:hover #img {
+    &:hover #img  {
         transform: scale(1);
+        
     }
+   
 }
+
+
 
 @media screen and (max-width: 768px) {
     .Product {

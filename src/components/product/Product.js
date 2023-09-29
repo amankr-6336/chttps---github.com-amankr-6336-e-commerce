@@ -13,7 +13,7 @@ function Product({product}) {
             <div className="product-container">
                 <div className="product-img">
                     <div className="img-container">
-                        <img src={product?.attributes.image?.data.attributes.url} alt={product?.attributes.title} id="img"/>
+                        <img src={product?.attributes.image?.data[0].attributes.url} alt={product?.attributes.title} id="img"/>
                     </div>
                 </div>
                 <div className="product-info">
@@ -21,7 +21,9 @@ function Product({product}) {
                         {product?.attributes.title}
                     </p>
                     <p className="price">₹ {product?.attributes.price}</p>
+                    <button className="buynow">BUY NOW</button>
                 </div>
+                
             </div>
         </div>
     );

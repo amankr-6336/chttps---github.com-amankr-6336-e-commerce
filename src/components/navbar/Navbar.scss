@@ -1,55 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
 
 .Navbar {
-    background-color: var(--primary-text-color);
+    background-color: white;
     height: 80px;
     z-index: 99;
-    color: white;
     text-transform: uppercase;
     position: sticky;
     top: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
     .nav-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        
 
         .nav-left {
+            height: 100%;
             .link-group {
+                height: 100%;
                 list-style: none;
                 display: flex;
                 gap: 16px;
+               
+                
+                .hover-link{
+                     height:100%;
+                    
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
 
-                .link {
-                    display: inline-block;
-                    padding: 6px;
+                    span{
+                        height: 3px;
+                        width: 0%;
+                        background-color: black;
+                        border-radius: 10px;
+                        transition-duration: .5s;
+                    }
+
+                    .link {
+                        display: inline-block;
+                        padding: 6px;
+                        color: black;
+                    }
                 }
+                .hover-link:hover{
+                    span{
+                        width: 100%;
+                        transition-duration: .5s;
+
+                    }
+                }
+
+               
             }
+
         }
 
         .nav-center {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            background-color: var(--primary-text-color);
+            // background-color: var(--primary-text-color);
 
             h1{
-                font-family: 'Dancing Script', cursive;
+                font-family: 'Playfair Display', serif;
+
+            }
+            .catheading{
+                width: 100%;
+                // border: 2px solid red;
+                padding: 10px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
+
+                .one{
+                    display: block;
+                  width: 60%;
+                  height: 2px;
+                  background-color: black;
+                  margin: 2px 0px;
+                  border-radius: 10px;
+
+                }
+                .two{
+                    display: block;
+                    width: 60%;
+                    height: 2px;
+                    background-color: black;
+                    margin-left: 47%;
+                    border-radius: 10px;
+                   
+                }
 
             }
 
             .banner {
-                color: white;
+                color: black;
             }
+           
         }
 
         .nav-right {
+         
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            width: 60px;
             .nav-cart {
                 position: relative;
                 padding: 6px;
+               
+                width: 100%;
+                
+                width: fit-content;
                 .icon {
                     font-size: 1.4rem;
                 }
