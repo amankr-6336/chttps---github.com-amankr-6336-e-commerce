@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { useDispatch } from "react-redux";
-import dummyCartImg from "../../assets/naruto.jpg";
+// import dummyCartImg from "../../assets/naruto.jpg";
 import './CartItem.scss'
 import { removeFromCart } from "../../redux/cartSlice";
 import { addToCart } from "../../redux/cartSlice";

@@ -1,10 +1,7 @@
 import d1 from '../assets/H2_AllMen-AU2-MN.jpg'
-import d2 from '../assets/d2.webp'
-import d3 from '../assets/d3.jpg'
+
 import d4 from '../assets/d4.jpg'
-import d5 from '../assets/d5.jpg'
-import d6 from '../assets/d6.jpg'
-import d7 from '../assets/d7.webp'
+
 import d8 from '../assets/banner-web_81ebcdc6-ca4c-482c-86e0-ad45d4df386b.webp'
 import d11 from '../assets/d11.webp'
 import d12 from '../assets/d12.webp'

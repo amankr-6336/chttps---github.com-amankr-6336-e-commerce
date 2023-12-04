@@ -44,7 +44,7 @@ function ProductDetail() {
         setProduct(null);
         fetchData();
         
-    }, [params]);
+    }, [ params]);
 
     if (!product) {
         return <Loader />;
