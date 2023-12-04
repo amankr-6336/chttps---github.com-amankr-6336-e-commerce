@@ -37,7 +37,7 @@ function Collection() {
         setCategoryId(params.categoryId);
         //api call 
         fetchProducts();
-    }, [params,sortBy])
+    }, [ params, sortBy])
 
     function updateCategory(e) {
         navigate(`/category/${e.target.value}`);

@@ -20,6 +20,8 @@ function Home() {
 
     const categories = useSelector((state) => state.categoryReducer.categories);
 
+    console.log(categories,"home");
+
     async function fetchData() {
 
         const topProductsResponse = await axiosClient.get(
